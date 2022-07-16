@@ -1,0 +1,155 @@
+\documentclass[a4paper, 20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{CJKutf8}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Jaime Trovoada}}\\
+  \href{https://jaimetrovoada.me}{Portfolio: jaimetrovoada.me}  & Email: \href{mailto:jaimetrovoada@gmail.com}{jaimetrovoada@gmail.com}\\
+  \href{https://github.com/jaimetrovoada}{Github: jaimetrovoada} & Mobile: \href{tel:+8618202617004}{+86 182 0261 7004}\\
+  {\textit{Beijing, China}}
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{EXPERIENCE}}}
+  \resumeSubHeadingListStart
+    \resumeSubheading{北京燃星科技有限公司}{Beijing, China}
+    {Frontend Developer (Full-time)}{Aug 2021 - Apr 2022}
+    \resumeItemListStart
+        \item{Realized the design of multiple projects, while making sure they follows responsive web design guidelines;}
+        \item{Implemented functions that help users interact with the services provided;}
+        \item{Created custom components that suited the project needs;}
+        \item{Learned how interactions with web3 (blockchain, smart contracts) are made;}
+        \item{Learned how to leverage the features TypeScript provides to make the code base less error prone;}
+        \item{Optimized code, improving page load and operations load times;}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{EDUCATION}}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tianjin University}{Tianjin, China}
+      {Bachelor, Computer Science}{Sep 2017 - Jul 2021}
+    \resumeSubheading
+      {Tianjin University}{Tianjin, China}
+      {Chinese Language}{Feb 2017 - Jul 2017}
+    \resumeSubheading
+      {Fu Jen Catholic University}{Taiwan}
+      {Chinese Language}{Sep 2016 - Feb 2017}
+    \resumeSubheading
+      {Coursera, Josh Hopkins University}{coursera.com}
+      {HTML, CSS, and JavaScript for Web Developers}{Sep 2020 - Oct 2020}
+  \resumeSubHeadingListEnd
+	    
+
+%-----------SKILLS-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{TECNOLOGIES \& SKILLS}}}
+	\resumeSubHeadingListStart
+	  \resumeSubItem{Tecnologies}{\quad JavaScript/TypeScript, HTML/CSS/SCSS, React, Material UI, Go(lang), NodeJS, Git, Rust, Unix/Linux, Bash}
+	  \resumeSubItem{Languages}{\quad Portuguese, English, Chinese (HSK4)}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{PROJECTS}} \tiny{(more can be found on my github)}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{To-Do WebApp}
+      {A to-do app built with vanilla JavaScript, HTML, and CSS, that uses the browser localStorage API to save data.}
+      \vspace{2pt}
+    \resumeSubItem{Weather WebApp}
+      {A simple weather app that uses the browser location API and OpenWeatherMap API, it can display current and next day weather information. Built using React.}
+      \vspace{2pt}
+    \resumeSubItem{Patent Inquiry System}
+      {My thesis project. A service/system connected to a database, that contains information related to Patents and allows users to search for information contained in it. Built using React, Node, Express, and MySQL.}
+      \vspace{2pt}
+    \resumeSubItem{Portfolio Template Website}
+      {A GitHub repository template for making personal websites and deploying using GitHub Pages. Built with: React, TypeScript, Eslint, and Prettier.}
+      \vspace{2pt}
+    \resumeSubItem{Food Types API}
+      {A simple API that provides information about certain types of food. Built (for learning purposes) using a mock MySQL database, Go(lang), and Gin.}
+      \vspace{2pt}
+    \resumeSubItem{Image Uploader Service (Work In Progress)}
+      {A service where users can upload an image and then view it. Built using React for the frontend, and Go(lang) for the Backend API.}
+      \vspace{2pt}
+  \resumeSubHeadingListEnd
+
+\clearpage\end{CJK*}
+\end{document}
