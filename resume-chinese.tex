@@ -1,0 +1,155 @@
+\documentclass[a4paper, 20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{CJKutf8}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Jaime Trovoada}}\\
+  \href{https://jaimetrovoada.me}{个人网站: jaimetrovoada.me}  & 邮箱: \href{mailto:jaimetrovoada@gmail.com}{jaimetrovoada@gmail.com}\\
+  \href{https://github.com/jaimetrovoada}{Github: jaimetrovoada} & 手机号: \href{tel:+8618202617004}{+86 182 0261 7004}\\
+  {\textit{北京，中国}}
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{工作经验}}}
+  \resumeSubHeadingListStart
+    \resumeSubheading{北京燃星科技有限公司}{北京}
+    {Frontend Developer (Web 前端)}{08月2021 - 04月2022}
+    \resumeItemListStart
+        \item{参与了各类项目的设计，参与网页页面的完成，确保网页正常运行;}
+        \item{为了实现良好的用户体验，帮助网页用户能够正常使用各类交互功能;}
+        \item{创建适合项目需求的自定义组件;}
+        \item{了解如何与 web3(区块链、智能合约)进行交互;}
+        \item{学习如何利用 TypeScript 提供的功能使代码库更加耐用坚固;}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{教育}}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {天津大学}{天津}
+      {本科, 计算机科学与技术 }{09月2017 - 07月2021}
+    \resumeSubheading
+      {天津大学}{天津}
+      {汉语}{02月2017 - 07月2017}
+    \resumeSubheading
+      {Fu Jen Catholic University}{台湾}
+      {汉语}{09月2016 - 02月2017}
+    \resumeSubheading
+      {Coursera, Josh Hopkins University}{coursera.com}
+      {HTML, CSS, and JavaScript for Web Developers}{09月2020 - 10月2020}
+  \resumeSubHeadingListEnd
+	    
+
+%-----------SKILLS-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{技术和技能}}}
+	\resumeSubHeadingListStart
+	  \resumeSubItem{技术}{\quad JavaScript/TypeScript, HTML/CSS/SCSS, React, Material UI, Go(lang), NodeJS, Git, Rust, Unix/Linux, Bash}
+	  \resumeSubItem{语言}{\quad 葡萄牙语, 英文, 中文(HSK4)}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{项目}} \tiny{(more can be found on my github)}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{To-Do WebApp}
+      {一个使用原生 JavaScript、HTML 和 CSS 构建的待办事项应用程序，使用浏览器 localStorage API 来保存数据.}
+      \vspace{2pt}
+    \resumeSubItem{Weather WebApp}
+      {一个简单的天气应用程序，使用浏览器位置 API 和 OpenWeatherMap API, 它可以显示当前和第二天的天气信息。 使用 React 构建.}
+      \vspace{2pt}
+    \resumeSubItem{Patent Inquiry System}
+      {我的论文项目。 连接到数据库的服务/系统，其中包含与专利相关的信息，并允许用户搜索其中包含的信息。 使用 React、Node、Express 和 MySQL 构建.}
+      \vspace{2pt}
+    \resumeSubItem{Portfolio Template Website}
+      {一个 GitHub 存储库模板，用于制作个人网站并使用 GitHub Pages 进行部署。 内置: React、TypeScript、Eslint、Prettier.}
+      \vspace{2pt}
+    \resumeSubItem{Food Types API}
+      {一个简单的 API, 提供有关某些类型食物的信息。 使用模拟 MySQL 数据库、Go(lang) 和 Gin 构建(用于学习目的).}
+      \vspace{2pt}
+    \resumeSubItem{Image Uploader Service (Work In Progress)}
+      {用户可以上传图像然后查看它的服务。 前端使用 React 构建，后端 API 使用 Go(lang).}
+      \vspace{2pt}
+  \resumeSubHeadingListEnd
+
+\clearpage\end{CJK*}
+\end{document}
