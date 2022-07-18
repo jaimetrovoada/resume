@@ -15,6 +15,8 @@
 \usepackage{fancyhdr}
 \usepackage{CJKutf8}
 \usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -91,16 +93,14 @@
 \section{\textcolor[HTML]{E36C09}{\textbf{EXPERIENCE}}}
 \resumeSubHeadingListStart{}
     \resumeSubheading{北京燃星科技有限公司}{Beijing, China}
-    {Frontend Developer (Full-time)}{Aug 2021-Apr 2022}
+    {Frontend Developer (Full-time)}{August 2021 - April 2022}
     \resumeItemListStart{}
-        \item{Realized the design of multiple projects, while making sure they follows responsive web design guidelines;}
-        \item{Implemented functions that help users interact with the services provided;}
-        \item{Created custom components that suited the project needs;}
-        \item{Learned how interactions with web3 (blockchain, smart contracts) are made;}
-        \item{Learned how to leverage the features TypeScript provides to make the code base less error prone;}
-        \item{Optimized code, improving page load and operations load times;}
-          \resumeItemListEnd{}
-          \resumeSubHeadingListEnd{}
+        \item{Discussed with the designer and product manager ways to improve page responsiveness and accessibility, which resulted in improved acessebility scores by 15\%;}
+        \item{Improved code modularity and reusability by refactoring dozens of lines of code, leading to page load times improving by 20\%;}
+        \item{Utilized tools like ESLint and Prettier to ensure consistency throughout the code base, making our workflow 2 times more productive;}
+        \item{Added type annotations to previously untyped variables, in turn reducing dozens of errors and unpredicted behaviours, and cutting debug time by 25\%;}
+    \resumeItemListEnd{}
+\resumeSubHeadingListEnd{}
 
 
 %-----------EDUCATION-----------------
@@ -108,13 +108,13 @@
 \section{\textcolor[HTML]{E36C09}{\textbf{EDUCATION}}}
 \resumeSubHeadingListStart{}
 \resumeSubheading{Tianjin University}{Tianjin, China}
-      {Bachelor, Computer Science}{Sep 2017-Jul 2021}
+      {Bachelor, Computer Science}{expected Jul 2023}
       \resumeSubheading{Tianjin University}{Tianjin, China}
-      {Chinese Language}{Feb 2017-Jul 2017}
+      {Chinese Language}{February 2017 - July 2017}
       \resumeSubheading{Fu Jen Catholic University}{Taiwan}
-      {Chinese Language}{Sep 2016-Feb 2017}
+      {Chinese Language}{September 2016 - February 2017}
       \resumeSubheading{Coursera, Johns Hopkins University}{coursera.com}
-      {HTML, CSS, and JavaScript for Web Developers}{Sep 2020-Oct 2020}
+      {HTML, CSS, and JavaScript for Web Developers}{September 2020 - October 2020}
 \resumeSubHeadingListEnd{}
 	    
 
@@ -122,7 +122,7 @@
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{TECNOLOGIES \& SKILLS}}}
 \resumeSubHeadingListStart{}
-	  \resumeSubItem{Tecnologies}{\quad JavaScript/TypeScript, HTML/CSS/SCSS, React, Material UI, Go, NodeJS, Git, Rust, Unix/Linux, Bash}
+	  \resumeSubItem{Tecnologies}{\quad JavaScript/TypeScript, React, HTML/CSS/SCSS, Git, Go, NodeJS}
 	  \resumeSubItem{Languages}{\quad Portuguese, English, Chinese (HSK4)}
     \resumeSubHeadingListEnd{}
 
@@ -131,25 +131,27 @@
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{PROJECTS}} \tiny{(more can be found on my github)}}
 \resumeSubHeadingListStart{}
-    \resumeSubItem{To-Do WebApp}
-      {A to-do app built with vanilla JavaScript, HTML, and CSS, that uses the browser localStorage API to save data.}
-      \vspace{2pt}
-    \resumeSubItem{Weather WebApp}
-      {A simple weather app that uses the browser location API and OpenWeatherMap API, it can display current and next day weather information. Built using React.}
-      \vspace{2pt}
     \resumeSubItem{Patent Inquiry System}
-      {My thesis project. A service/system connected to a database, that contains information related to Patents and allows users to search for information contained in it. Built using React, Node, Express, and MySQL.}
+      {My thesis project. A service/system connected to a MySQL database, that contains information related to Patents and allows users to search for information contained in it based on different criteria/categories. (React, NodeJS, Express, and MySQL.)}
+      \vspace{2pt}
+    \resumeSubItem{GruvIt (Work In Progress)}
+      {A online service that modifies pictures to the \href{https://github.com/morhetz/gruvbox}{gruvbox color palette} with the help of \href{https://github.com/paulopacitti/gruvbox-factory}{gruvbox-factory} python package. (React + TypeScript, Go)}
+      \begin{itemize}
+        \item{Backend built with Go and \href{https://github.com/gin-gonic/gin}{Gin framework} which makes it easier to write APIs and reduces setup time by 50\% and benefits from Go inate performance;}
+        \item{A POST route to upload files, which are than modified by running the gruvbox-factory tool from the system;}
+        \item{A GET route, used to retrieve the final file;}
+      \end{itemize}
       \vspace{2pt}
     \resumeSubItem{Portfolio Template Website}
-      {A GitHub repository template for making personal websites and deploying using GitHub Pages. Built with: React, TypeScript, Eslint, and Prettier.}
+      {A GitHub repository template for making personal websites and deploying using GitHub Pages. (React, TypeScript, Material UI, Eslint, and Prettier)}
       \vspace{2pt}
-    \resumeSubItem{Food Types API}
-      {A simple API that provides information about certain types of food. Built (for learning purposes) using a mock MySQL database, Go, and Gin.}
+    \resumeSubItem{To-Do WebApp}
+      {A to-do app built with vanilla JavaScript, HTML, and CSS, that uses the browser localStorage API to save data. (HTML/CSS, JavaScript)}
       \vspace{2pt}
-    \resumeSubItem{Image Uploader Service (Work In Progress)}
-      {A service where users can upload an image and then view it. Built using React for the frontend, and Go for the Backend API.}
+    \resumeSubItem{Weather WebApp}
+      {A simple weather app that uses the browser location API and OpenWeatherMap API, it can display current and next day weather information. (React)}
       \vspace{2pt}
-      \resumeSubHeadingListEnd{}
+\resumeSubHeadingListEnd{}
 
 \clearpage\end{CJK*}
 \end{document}
