@@ -21,6 +21,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.530in}
@@ -58,7 +59,7 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{#3} & \textit{#4} \\
+      #3 & #4 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -91,14 +92,13 @@
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{工作经验}}}
   \resumeSubHeadingListStart
-    \resumeSubheading{北京燃星科技有限公司}{北京}
-    {Frontend Developer (Web 前端)}{08月2021 - 04月2022}
+    \resumeSubheading{Frontend Developer (Web 前端)}{北京}
+    {北京燃星科技有限公司}{08月2021 - 04月2022}
     \resumeItemListStart
-        \item{参与了各类项目的设计，参与网页页面的完成，确保网页正常运行;}
-        \item{为了实现良好的用户体验，帮助网页用户能够正常使用各类交互功能;}
-        \item{创建适合项目需求的自定义组件;}
-        \item{了解如何与 web3(区块链、智能合约)进行交互;}
-        \item{学习如何利用 TypeScript 提供的功能使代码库更加耐用坚固;}
+        \item{通过与设计师和产品经理讨论使网页更好地为用户服务的方法，将页面可访问性得分提高了 15\%，并提高了跨设备的页面响应能力；}
+        \item{通过重构数十行代码，将页面加载时间减少了 20\%，并提高了代码的模块化和可重用性；}
+        \item{通过使用 ESLint 和 Prettier 等工具确保整个代码库的一致性，使我们的工作流程效率提高了两倍；}
+        \item{通过向以前无类型的变量添加类型注释，将调试时间缩短 25\%，并减少数十个错误和意外行为；}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -126,32 +126,34 @@
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{技术和技能}}}
 	\resumeSubHeadingListStart
-	  \resumeSubItem{技术}{\quad JavaScript/TypeScript, HTML/CSS/SCSS, React, Material UI, Go(lang), NodeJS, Git, Rust, Unix/Linux, Bash}
+	  \resumeSubItem{技术}{\quad JavaScript/TypeScript, HTML/CSS/SCSS, React, Git, Go, NodeJS}
 	  \resumeSubItem{语言}{\quad 葡萄牙语, 英文, 中文(HSK4)}
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \vspace{5pt}
-\section{\textcolor[HTML]{E36C09}{\textbf{项目}} \tiny{(more can be found on my github)}}
+\section{\textcolor[HTML]{E36C09}{\textbf{项目}} \tiny{（更多在我的 GitHub 上）}}
   \resumeSubHeadingListStart
-    \resumeSubItem{To-Do WebApp}
-      {一个使用原生 JavaScript、HTML 和 CSS 构建的待办事项应用程序，使用浏览器 localStorage API 来保存数据.}
+    \resumeSubItem{Patent Inquiry System [React, NodeJS, Express, and MySQL]}
+      {实现了一个连接到 MySQL 数据库的后端和一个包含与专利相关的信息的服务的前端，并允许用户搜索其中包含的信息}
       \vspace{2pt}
-    \resumeSubItem{Weather WebApp}
-      {一个简单的天气应用程序，使用浏览器位置 API 和 OpenWeatherMap API, 它可以显示当前和第二天的天气信息。 使用 React 构建.}
+      \resumeSubItem{GruvIt (Work In Progress) [React + TypeScript, Go]}
+      {开发了一个服务，在 \href{https://github.com/paulopacitti/gruvbox-factory}{gruvbox-factory} python 包的帮助下将上传的图片修改为 \href{https://github.com/morhetz/gruvbox}{gruvbox} 调色板，然后返回给用户。}
+      \begin{itemize}
+        \item{使用 Go 和 \href{https://github.com/gin-gonic/gin}{Gin}框架构建的后端，使编写 API 更容易，减少 50\% 的设置时间，并受益于 Go 的先天性能；}
+        \item{上传文件的 POST 路由。 然后，通过 gruvbox-factory 工具修改文件；}
+        \item{GET 路由用于检索最终文件；}
+      \end{itemize}
       \vspace{2pt}
-    \resumeSubItem{Patent Inquiry System}
-      {我的论文项目。 连接到数据库的服务/系统，其中包含与专利相关的信息，并允许用户搜索其中包含的信息。 使用 React、Node、Express 和 MySQL 构建.}
+    \resumeSubItem{Portfolio Template Website [React + TypeScript]}
+      {发布了一个 GitHub 存储库模板，用于制作个人网站并使用 GitHub Pages 进行部署;}
       \vspace{2pt}
-    \resumeSubItem{Portfolio Template Website}
-      {一个 GitHub 存储库模板，用于制作个人网站并使用 GitHub Pages 进行部署。 内置: React、TypeScript、Eslint、Prettier.}
+    \resumeSubItem{To-Do WebApp [HTML/CSS, JavaScript}
+      {开发了一个使用浏览器 localStorage API 来保存数据的待办事项应用程序。}
       \vspace{2pt}
-    \resumeSubItem{Food Types API}
-      {一个简单的 API, 提供有关某些类型食物的信息。 使用模拟 MySQL 数据库、Go(lang) 和 Gin 构建(用于学习目的).}
-      \vspace{2pt}
-    \resumeSubItem{Image Uploader Service (Work In Progress)}
-      {用户可以上传图像然后查看它的服务。 前端使用 React 构建，后端 API 使用 Go(lang).}
+    \resumeSubItem{Weather WebApp [React]}
+      {编写了一个使用浏览器位置 API 和 OpenWeatherMap API 的简单天气应用程序。 它可以显示当前和次日的天气信息。}
       \vspace{2pt}
   \resumeSubHeadingListEnd
 
