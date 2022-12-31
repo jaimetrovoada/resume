@@ -1,0 +1,164 @@
+\documentclass[a4paper, 20pt]{article}
+
+\title{Resume}
+\author{Jaime Trovoada Dias Lourenco}
+\date{July 2022}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{CJKutf8}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom{}
+\raggedright{}
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Jaime Trovoada}}\\
+  \href{https://jaimetrovoada.me}{Portfolio: jaimetrovoada.me}  & Email: \href{mailto:jaimetrovoada@gmail.com}{jaimetrovoada@gmail.com}\\
+  \href{https://github.com/jaimetrovoada}{Github: jaimetrovoada} & Mobile: \href{tel:+8618202617004}{+86 182 0261 7004}\\
+  {\textit{Tianjin, China}}
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{EXPERIENCE}}}
+\resumeSubHeadingListStart{}
+    \resumeSubheading{Frontend Developer (Full-time)}{Beijing, China}
+    {北京燃星科技有限公司}{August 2021 - April 2022}
+    \resumeItemListStart{}
+        \item{Improved page accessibility scores by 15\% and page responsiveness across devices by discussing with the designer and product manager ways to make the webpage better for its users;}
+        \item{Reduced page load times by 20\% and increased code modularity and reusability by refactoring dozens of lines of code;}
+        \item{Made our workflow two times more productive by utilizing tools like ESLint and Prettier to ensure consistency throughout the code base;}
+        \item{Cut debug time by 25\% and reduced dozens of errors and unpredicted behaviors by adding type annotations to previously untyped variables;}
+    \resumeItemListEnd{}
+\resumeSubHeadingListEnd{}
+
+
+%-----------EDUCATION-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{EDUCATION}}}
+\resumeSubHeadingListStart{}
+\resumeSubheading{Tianjin University}{Tianjin, China}
+      {Bachelor, Computer Science}{expected July 2023}
+      \resumeSubheading{Tianjin University}{Tianjin, China}
+      {Chinese Language}{February 2017 - July 2017}
+      \resumeSubheading{Fu Jen Catholic University}{Taiwan}
+      {Chinese Language}{September 2016 - February 2017}
+      \resumeSubheading{Coursera, Johns Hopkins University}{coursera.com}
+      {HTML, CSS, and JavaScript for Web Developers}{September 2020 - October 2020}
+\resumeSubHeadingListEnd{}
+	    
+
+%-----------SKILLS-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{TECHNOLOGIES \& SKILLS}}}
+\resumeSubHeadingListStart{}
+	  \resumeSubItem{Technologies}{\quad JavaScript/TypeScript, React, Vue, HTML/CSS/SCSS, Git, Go, NodeJS, Docker}
+	  \resumeSubItem{Languages}{\quad Portuguese, English, Chinese (HSK4)}
+    \resumeSubHeadingListEnd{}
+
+
+%-----------PROJECTS-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{PROJECTS}} \tiny{(more on my GitHub)}}
+\resumeSubHeadingListStart{}
+\resumeSubItem{Patent Inquiry System [React, NodeJS, Express, and MySQL]}
+      {Implemented a Backend/Server connected to a MySQL database and the Frontend for a service that contains information related to Patents and allows users to search for information contained in it.}
+      %\begin{itemize}
+      %  \item{Simple frontend with a multi-field form for each search parameter, and a table to display results;}
+      %  \item{NodeJS and Express for handling request from the frontend;}
+      %\end{itemize}
+      \vspace{2pt}
+      \resumeSubItem{GruvIt [React + TypeScript, Go, Docker]}
+      {Developed a service that modifies uploaded pictures to the \href{https://github.com/morhetz/gruvbox}{gruvbox color palette} with the help of \href{https://github.com/paulopacitti/gruvbox-factory}{gruvbox-factory} python package and then serves it back to the user.}
+      \begin{itemize}
+        \item{Backend built with Go and \href{https://github.com/gin-gonic/gin}{Gin framework}, which makes it easier to write APIs and reduces setup time by 50\%, and benefits from Go innate performance;}
+        \item{A POST route to upload files. Then, the file is modified by the gruvbox-factory tool;}
+        \item{A GET route is used to retrieve the final file;}
+      \end{itemize}
+      \vspace{2pt}
+      \resumeSubItem{Portfolio Template Website [React + TypeScript]}
+      {Released a GitHub repository template for making personal websites and deploying using GitHub Pages.}
+      %\begin{itemize}
+      %  \item{All necessary information are stored in variables placed in a single file, making it easier to edit;}
+      %  \item{All variables have types to ensure they are correctly filled;}
+      %\end{itemize}
+      \vspace{2pt}
+      \resumeSubItem{To-Do WebApp [HTML/CSS, JavaScript]}
+      {Developed a to-do app that uses the browser localStorage API to save data.}
+      \vspace{2pt}
+      \resumeSubItem{Weather WebApp [React]}
+      {Coded a simple weather app that uses the browser location API and OpenWeatherMap API. It can display current and next-day weather information.}
+      \vspace{2pt}
+\resumeSubHeadingListEnd{}
+
+\clearpage\end{CJK*}
+\end{document}
