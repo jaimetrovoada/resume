@@ -84,7 +84,7 @@
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\LARGE Jaime Trovoada}}\\
   \href{https://jaimetrovoada.vercel.app/}{个人网站: jaimetrovoada.vercel.app}  & 邮箱: \href{mailto:jaimetrovoada@gmail.com}{jaimetrovoada@gmail.com}\\
-  \href{https://github.com/jaimetrovoada}{Github: jaimetrovoada} & 手机号: \href{tel:+8618202617004}{+86 182 0261 7004}\\
+  \href{https://github.com/jaimetrovoada}{Github: github.com/jaimetrovoada} & 手机号: \href{tel:+8618202617004}{+86 182 0261 7004}\\
   \href{https://www.linkedin.com/in/jaimetrovoada630/}{LinkedIn: linkedin.com/in/jaimetrovoada630} & \textit{Tianjin, China}\\
 \end{tabular*}
 
@@ -99,7 +99,7 @@
       \item {使用Storybook创建可重用且易于维护的组件。}
       \item {与开发人员和设计师团队合作创建一致且用户友好的设计系统。}
       \item {具备学习新技术和适应变化的能力。}
-      \item {学会了如何实现Web3应用程序。}
+      \item {帮助团队引入 ESLint 和 Prettier 等工具，从而提高代码质量。}
     \resumeItemListEnd{}
   \resumeSubHeadingListEnd{}
 
@@ -114,15 +114,15 @@
       {汉语}{02月2017 - 07月2017}
     \resumeSubheading{辅仁大学}{台湾}
       {汉语}{09月2016 - 02月2017}
-    \resumeSubheading{Coursera, Johns Hopkins University}{coursera.com}
-      {HTML, CSS, and JavaScript for Web Developers}{09月2020 - 10月2020}
   \resumeSubHeadingListEnd{}
 	    
 %-----------CERTS-----------------
 \vspace{5pt}
-\section{\textcolor[HTML]{E36C09}{\textbf{认证}}}
+\section{\textcolor[HTML]{E36C09}{\textbf{奖项与认证}}}
 \resumeSubHeadingListStart{}
-\resumeSubheading{University of Helsinki - MOOC}{fullstackopen.com}
+\resumeSubheading{大学奖学金}{中国国家留学生基金委员会}
+{天津大学}{2017 - 2021}
+\resumeSubheading{\href{https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/c54941f0ecb4d052a3cf6982d1d27398}{University of Helsinki - MOOC}}{fullstackopen.com}
 {Full Stack Development}{2023}
 \resumeSubHeadingListEnd{}
 
@@ -130,31 +130,45 @@
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{技术和技能}}}
 	\resumeSubHeadingListStart{}
-	  \resumeSubItem{技术}{\quad JavaScript/TypeScript, React, NextJS, TailwindCSS, Bootstrap, Vue, HTML/CSS/SCSS, Git, Go(lang), NodeJS, Docker, MongoDB}
+	  \resumeSubItem{技术}{\quad JavaScript/TypeScript, React, NextJS, TailwindCSS, HTML/CSS/SCSS, Git, Go(lang), NodeJS}
 	  \resumeSubItem{语言}{\quad 葡萄牙语, 英文, 中文 (HSK4)}
   \resumeSubHeadingListEnd{}
 
 
 %-----------PROJECTS-----------------
 \vspace{5pt}
-\section{\textcolor[HTML]{E36C09}{\textbf{项目}} \tiny{（更多在我的 GitHub 上）}}
-  \resumeSubHeadingListStart{}
-    \resumeSubItem{Patent Inquiry System [React, NodeJS, Express, and MySQL]}
-      {实现了一个连接到 MySQL 数据库的后端和一个包含与专利相关的信息的服务的前端，并允许用户搜索其中包含的信息}
-      \vspace{2pt}
-      \resumeSubItem{GruvIt [React + TypeScript, Go, Docker]}
-      {开发了一个服务，在 \href{https://github.com/paulopacitti/gruvbox-factory}{gruvbox-factory} python 包的帮助下将上传的图片修改为 \href{https://github.com/morhetz/gruvbox}{gruvbox} 调色板，然后返回给用户。}
-      \vspace{2pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{项目}} \tiny{(more on my GitHub)}}
+\resumeSubHeadingListStart{}
       \resumeSubItem{Got Food [TypeScript, NextJS, NodeJS/Express, TypeORM, PostgreSQL]}
       {餐馆老板可以在这个平台上添加他们的业务，以便顾客可以在设施内轻松点餐，而无需等待服务员。}
+      \begin{itemize}
+        \item{实施了 JSON Web 令牌 (JWT) 身份验证系统，允许用户使用电子邮件和密码登录。}
+        \item{实施授权服务来验证用户可以根据其角色执行哪些操作。}
+        \item{实施 CRUD 操作来管理用户帐户、餐厅、菜单项和订单。}
+        \item{使用 multer 将图像上传到 Firebase 对象存储。}
+      \end{itemize}
+      \vspace{2pt}
+      \resumeSubItem{GruvIt [React, TypeScript, Go, Docker]}
+      {开发了一项服务，借助 gruvbox-factory python 包将上传的图片修改为 gruvbox 调色板，然后将其返回给用户。}
       \vspace{2pt}
       \resumeSubItem{AppliTrackr [TypeScript, NextJS, Prisma, PostgreSQL]}
       {工作申请跟踪器。}
+      \begin{itemize}
+        \item{使用 Next-Auth 实施基于 OAuth 的登录系统，允许用户使用 Google 或 Github 进行签名。}
+        \item{使用 Tanstack/React-Tables 实现可拍卖/可编辑的表，允许用户创建和编辑作业。}
+        \item{实施分析服务来帮助用户跟踪他们的进度。}
+      \end{itemize}
       \vspace{2pt}
-      \resumeSubItem{NittMngr [TypeScript, NextJS, Prisma, PostgreSQL]}
-      {Nitter 的 Feed 管理器。}
+      \resumeSubItem{Patent Inquiry System [React, NodeJS, Express, and MySQL]}
+      {实现了连接到 MySQL 数据库的后端/服务器和包含与专利相关信息的服务的前端，并允许用户搜索其中包含的信息。}
       \vspace{2pt}
-  \resumeSubHeadingListEnd{}
+\resumeSubHeadingListEnd{}
+
+%-----------Hobbies and Interests-----------------
+\vspace{5pt}
+\section{\textcolor[HTML]{E36C09}{\textbf{爱好和兴趣}}}
+\par{除了致力于我的项目和了解科技界的最新消息外，我还喜欢玩电子游戏、滑板、听音乐以及出去寻找新的有趣的地方。}
+
 
 \clearpage\end{CJK*}
 \end{document}
