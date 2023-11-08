@@ -97,7 +97,7 @@
     {Beijing Burning Star Technology Co., Ltd.}{August 2021 - August 2022}
     \resumeItemListStart{}
         \item{Used Storybook to create reusable and maintainable components.}
-        \item{Collaborated with a team of developers and designers to create a consistent and user-friendly design system.}
+        \item{Used Figma to collaborate with a team of developers and designers to create a consistent and user-friendly design system.}
         \item{Proven ability to learn new technologies and adapt to change.}
         \item{Helped introduce tools like ESLint and Prettier to the team, thus improving code quality.}
     \resumeItemListEnd{}
@@ -123,16 +123,16 @@
 \resumeSubHeadingListStart{}
 \resumeSubheading{CSC - University Scholarship}{China Scholarship Council}
 {Tianjin University}{2017 - 2021}
-\resumeSubheading{\href{https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/c54941f0ecb4d052a3cf6982d1d27398}{University of Helsinki - MOOC}}{fullstackopen.com}
-{Full Stack Development}{2023}
+\resumeSubheading{\href{https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/c54941f0ecb4d052a3cf6982d1d27398}{FullStack Open}}{Full Stack Development}
+{University of Helsinki - MOOC}{February 2023}
 \resumeSubHeadingListEnd{}
 
 %-----------SKILLS-----------------
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{TECHNOLOGIES \& SKILLS}}}
 \resumeSubHeadingListStart{}
-	  \resumeSubItem{Technical}{\quad JavaScript/TypeScript, React, NextJS, TailwindCSS, HTML/CSS/SCSS, Git, Go(lang), NodeJS/Express, SQL (PostgreSQL, MySQL)}
-	  \resumeSubItem{Languages}{\quad Portuguese, English, Chinese (HSK4)}
+	  \resumeSubItem{Technical}{\quad JavaScript, TypeScript, React, NextJS, TailwindCSS, HTML, CSS, SCSS, Git, Go, NodeJS, Express, SQL (PostgreSQL, MySQL), Docker, REST API, Linux}
+	  \resumeSubItem{Languages}{\quad Portuguese (Native), English, Chinese (HSK4)}
     \resumeSubHeadingListEnd{}
 
 
@@ -140,38 +140,35 @@
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{PROJECTS}} \tiny{(more on my GitHub)}}
 \resumeSubHeadingListStart{}
-      \resumeSubItem{Got Food [TypeScript, NextJS, NodeJS/Express, TypeORM, PostgreSQL]}
-      {A platform where restaurant owners can add their businesses so that customers can easily order their food when inside the facilities, without having to wait for a waiter.}
-      \begin{itemize}
-        \item{Implemented a JSON Web Token (JWT) authentication system, that allows users to log in using a email and password.}
-        \item{Implemented an authorization service to verify what actions users are allowed to perform based on their roles.}
-        \item{Implemented CRUD operations for managing user accounts, restaurants, menu items, and orders.}
-        \item{Implemented upload service, that stores iamges to Firebase object storage, using Multer.}
-      \end{itemize}
-      \vspace{2pt}
-      \resumeSubItem{GruvIt [React, TypeScript, Go, Docker]}
-      {Developed a service that modifies uploaded pictures to the \href{https://github.com/morhetz/gruvbox}{gruvbox color palette} with the help of \href{https://github.com/paulopacitti/gruvbox-factory}{gruvbox-factory} python package and then serves it back to the user.}
-      \vspace{2pt}
-      \resumeSubItem{AppliTrackr [TypeScript, NextJS, Prisma, PostgreSQL]}
-      {An job application tracker.}
-      \begin{itemize}
-        \item{Implemented OAuth based login system using Next-Auth, that allows users to sign using Google or Github.}
-        \item{Used Tanstack/React-Tables to implement an auctionable/editable table that allows users to create and edit jobs.}
-        \item{Implemented an analytics service to help users keep track of their progress.}
-      \end{itemize}
-      \vspace{2pt}
-      \resumeSubItem{NittMngr [TypeScript, NextJS, Prisma, PostgreSQL]}
-      {A feed manager for Nitter.}
-      \vspace{2pt}
-      \resumeSubItem{Patent Inquiry System [React, NodeJS, Express, and MySQL]}
-      {Implemented a Backend/Server connected to a MySQL database and the Frontend for a service that contains information related to Patents and allows users to search for information contained in it.}
-      \vspace{2pt}
+  \resumeSubItem{Got Food [TypeScript, NextJS, NodeJS/Express, TypeORM, PostgreSQL]}{A restaurant platform with the goal of making it easier to place your order, by making it possible to do so without interacting with the staff.}
+    \begin{itemize}
+      \item{Implemented a JSON Web Token (JWT) authentication system, that allows users to log in using a email and password.}
+      \item{Implemented an authorization service to verify what actions users are allowed to perform based on their roles.}
+      \item{Implemented CRUD operations for managing user accounts, restaurants, menu items, and orders.}
+      \item{Implemented upload service, that stores images to Firebase object storage, using Multer.}
+    \end{itemize}
+    \vspace{2pt}
+  \resumeSubItem{Sanity Ecommerce [NextJS, TypeScript, Sanity CMS, Stripe]}{A demo of an eCommerce website built with NextJS and Sanity CMS.}
+    \begin{itemize}
+      \item{Implemented pagination.}
+      \item{Implemented checkout flow with Stripe.}
+      \item{Implemented cart functionality, that gets synced to the browser localStorage.}
+      \item{Used URL search parameters to keep track of states.}
+      \item{Used NextJS HTML streaming to load the less important information after the pages are rendered on the server.}
+    \end{itemize}
+    \vspace{2pt}
+  \resumeSubItem{Remote Buddies [TypeScript, NextJS, Go, Docker, PostgreSQL, SQLC]}{A platform to connect with other remote workers.}
+    \begin{itemize}
+      \item{Implemented oauth authentication flow in Go.}
+      \item{Used PostGIS (PostgreSQL extension) to store geographical data, and query users based on their location}
+    \end{itemize}
+    \vspace{2pt}
 \resumeSubHeadingListEnd{}
 
 %-----------Hobbies and Interests-----------------
-\vspace{5pt}
-\section{\textcolor[HTML]{E36C09}{\textbf{HOBBIES AND INTERESTS}}}
-\par{Besides working on my projects and keeping up with the latest news in the tech world, I enjoy playing video games, skateboarding, listening to music and going out to find new interesting places.}
+% \vspace{5pt}
+% \section{\textcolor[HTML]{E36C09}{\textbf{HOBBIES AND INTERESTS}}}
+% \par{Video Games, Skateboarding, Music, Baking}
 
 \clearpage\end{CJK*}
 \end{document}
