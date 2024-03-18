@@ -17,7 +17,17 @@
 \usepackage{fancyhdr}
 \usepackage{CJKutf8}
 \usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[raggedrightboxes]{ragged2e}
 
+% \hypersetup{
+%   colorlinks=true, % hyperlinks will be coloured
+%   linkcolor=blue, % hyperlink text will be blue
+%   urlcolor=cyan  % url color will be cyan
+% }
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -43,38 +53,6 @@
   \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule\vspace{-6pt}]
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeItemWithoutTitle}[1]{
-  \item\small{
-    {\vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      #3 & #4 \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
-
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
 %-----------------------------
 %%%%%%  CV STARTS HERE  %%%%%%
 
@@ -82,88 +60,106 @@
 \begin{CJK*}{UTF8}{gbsn}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Jaime Trovoada}}\\
-  \href{https://jaimetrovoada.vercel.app/}{Portfolio: jaimetrovoada.vercel.app}  & Email: \href{mailto:jaimetrovoada@gmail.com}{jaimetrovoada@gmail.com}\\
-  \href{https://github.com/jaimetrovoada}{Github: github.com/jaimetrovoada} & Mobile: \href{tel:+351932688428}{+351 932 688 428}\\
-  \href{https://www.linkedin.com/in/jaimetrovoada/}{LinkedIn: linkedin.com/in/jaimetrovoada} & \textit{Lisbon, Portugal}\\
-\end{tabular*}
+\textbf{{\LARGE Jaime Trovoada Dias Lourenço}} \\
+{Portfolio: \href{https://jaimetrovoada.vercel.app/}{\color{blue}{https://jaimetrovoada.vercel.app}}}\quad{Email: \href{mailto:jaimetrovoada@gmail.com}{\color{blue}{jaimetrovoada@gmail.com}}}\quad{Github: \href{https://github.com/jaimetrovoada}{\color{blue}{github.com/jaimetrovoada}}}\quad{Mobile: \href{tel:+351932688428}{\color{blue}{+351 932 688 428}}}\quad{LinkedIn: \href{https://www.linkedin.com/in/jaimetrovoada/}{\color{blue}{linkedin.com/in/jaimetrovoada}}}\quad{\textit{Lisbon, Portugal}} \\
 
 %-----------EXPERIENCE-----------------
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{EXPERIENCE}}}
-\resumeSubHeadingListStart{}
-    \resumeSubheading{Frontend Developer (Full-time)}{Beijing, China}
-    {Beijing Burning Star Technology Co., Ltd.}{August 2021 - August 2022}
-    \resumeItemListStart{}
-        \item{Used Storybook to create reusable and maintainable components.}
-        \item{Used Figma to collaborate with a team of developers and designers to create a consistent and user-friendly design system.}
-        \item{Proven ability to learn new technologies and adapt to change.}
-        \item{Helped introduce tools like ESLint and Prettier to the team, thus improving code quality.}
-    \resumeItemListEnd{}
-\resumeSubHeadingListEnd{}
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}r}
+  \textbf{Frontend Developer} & {Lisbon, Portugal} \\
+  {MKCVI} & {January 2024 - Present}
+\end{tabular*}
+\it{Tech Stack: JavaScript, NodeJS, C\#, .NET}
+\begin{itemize}[itemsep=-2pt]
+  \vspace{-5pt}
+\end{itemize}
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}r}
+  \textbf{Frontend Developer} & {Beijing, China} \\
+  {Beijing Burning Star Technology Co., Ltd.} & {August 2021 - August 2022}
+\end{tabular*}
+\it{Tech Stack: React, TypeScript, Styled Components, ECharts, Storybook, Figma}
+\begin{itemize}[itemsep=-2pt]
+  \vspace{-5pt}
+    \item{Used Storybook to create reusable and maintainable components.}
+    \item{Used Figma to collaborate with a team of developers and designers to create a consistent and user-friendly design system.}
+    \item{Used Echarts to provide data visualizations.}
+    \item{Helped introduce tools like ESLint and Prettier to the team, thus improving code quality.}
+\end{itemize}
 
 
 %-----------EDUCATION-----------------
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{EDUCATION}}}
-\resumeSubHeadingListStart{}
-\resumeSubheading{Tianjin University}{Tianjin, China}
-      {Bachelor, Computer Science}{September 2017 - July 2023}
-      \resumeSubheading{Tianjin University}{Tianjin, China}
-      {Chinese Language}{February 2017 - July 2017}
-      \resumeSubheading{Fu Jen Catholic University}{Taiwan}
-      {Chinese Language}{September 2016 - February 2017}
-\resumeSubHeadingListEnd{}
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}r}
+  \textbf{Tianjin University} & {Tianjin, China} \\
+  {Bachelor, Computer Science} & {July 2023} \\
+\end{tabular*}
+\textit{Relevant Courses: Database Systems, Computer Architecture, Operating Systems, Software Engineering, Big Data}
 	    
 
 %-----------CERTS-----------------
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{AWARDS \& CERTIFICATIONS}}}
-\resumeSubHeadingListStart{}
-\resumeSubheading{CSC - University Scholarship}{China Scholarship Council}
-{Tianjin University}{2017 - 2021}
-\resumeSubheading{\href{https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/c54941f0ecb4d052a3cf6982d1d27398}{FullStack Open}}{Full Stack Development}
-{University of Helsinki - MOOC}{February 2023}
-\resumeSubHeadingListEnd{}
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}r}
+  \textbf{CSC - University Scholarship} & {China Ministry of Education} \\
+  {Tianjin University}
+  \vspace{5pt}
+\end{tabular*}
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}r}
+  \textbf{FullStack Development} & {FullStack Open} \\
+  {University of Helsinki - MOOC} & {February 2023} \\
+  {Link:}\quad{\href{https://studies.cs.helsinki.fi/certificate/fullstackopen/en/c54941f0ecb4d052a3cf6982d1d27398}{\color{blue}{https://studies.cs.helsinki.fi/certificate/fullstackopen/en/c54941f0ecb4d052a3cf6982d1d27398}}}
+\end{tabular*}
 
 %-----------SKILLS-----------------
 \vspace{5pt}
 \section{\textcolor[HTML]{E36C09}{\textbf{TECHNOLOGIES \& SKILLS}}}
-\resumeSubHeadingListStart{}
-	  \resumeSubItem{Technical}{\quad JavaScript, TypeScript, React, NextJS, TailwindCSS, HTML, CSS, SCSS, Git, Go, NodeJS, Express, SQL (PostgreSQL, MySQL), Docker, REST API, Linux}
-	  \resumeSubItem{Languages}{\quad Portuguese (Native), English, Chinese (HSK4)}
-    \resumeSubHeadingListEnd{}
+    \textbf{Technical:}\quad{JavaScript ES6+, TypeScript, ReactJS, NextJS, TailwindCSS, HTML5, CSS3, SCSS, Git, Go, NodeJS, Express, SQL (PostgreSQL, MySQL), Docker, REST API, Linux, C\#} \\
+    \vspace{5pt}
+    \textbf{Languages:}\quad{Portuguese (Native), English, Chinese (HSK4)}
 
 
 %-----------PROJECTS-----------------
 \vspace{5pt}
-\section{\textcolor[HTML]{E36C09}{\textbf{PROJECTS}} \tiny{(more on my GitHub)}}
-\resumeSubHeadingListStart{}
-  \resumeSubItem{Got Food [TypeScript, NextJS, NodeJS/Express, TypeORM, PostgreSQL]}{A restaurant platform with the goal of making it easier to place your order, by making it possible to do so without interacting with the staff.}
-    \begin{itemize}
-      \item{Implemented a JSON Web Token (JWT) authentication system, that allows users to log in using a email and password.}
-      \item{Implemented an authorization service to verify what actions users are allowed to perform based on their roles.}
-      \item{Implemented CRUD operations for managing user accounts, restaurants, menu items, and orders.}
-      \item{Implemented upload service, that stores images to Firebase object storage, using Multer.}
-    \end{itemize}
-    \vspace{2pt}
-  \resumeSubItem{Sanity Ecommerce [NextJS, TypeScript, Sanity CMS, Stripe]}{A demo of an eCommerce website built with NextJS and Sanity CMS.}
-    \begin{itemize}
-      \item{Implemented pagination.}
-      \item{Implemented checkout flow with Stripe.}
-      \item{Implemented cart functionality, that gets synced to the browser localStorage.}
-      \item{Used URL search parameters to keep track of states.}
-      \item{Used NextJS HTML streaming to load the less important information after the pages are rendered on the server.}
-    \end{itemize}
-    \vspace{2pt}
-  \resumeSubItem{Remote Buddies [TypeScript, NextJS, Go, Docker, PostgreSQL, SQLC]}{A platform to connect with other remote workers.}
-    \begin{itemize}
-      \item{Implemented oauth authentication flow in Go.}
-      \item{Used PostGIS (PostgreSQL extension) to store geographical data, and query users based on their location}
-    \end{itemize}
-    \vspace{2pt}
-\resumeSubHeadingListEnd{}
+\section{\textcolor[HTML]{E36C09}{\textbf{PROJECTS}}}
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}p{0.5\linewidth}}
+\textbf{Got Food} & \textit{TypeScript, NextJS, NodeJS/Express, TypeORM, PostgreSQL, Redux/Redux-Toolkit} \\
+{Link:}\quad{\href{https://got-food-five.vercel.app/}{\color{blue}{https://got-food-five.vercel.app/}}}
+\end{tabular*}
+{A restaurant platform with the goal of making it easier to place your order, by making it possible to do so without interacting with the staff.}
+\begin{itemize}[itemsep=-2pt]
+  \vspace{-5pt}
+\item{Implemented a JSON Web Token (JWT) authentication system, that allows users to log in using a email and password.}
+\item{Implemented an authorization service to verify what actions users are allowed to perform based on their roles.}
+\item{Implemented upload service, that stores images to Firebase object storage, using Multer.}
+\end{itemize}
+\vspace{5pt}
+
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}r}
+\textbf{Sanity Ecommerce} & \textit{NextJS, Sanity CMS, Stripe} \\
+{Link:}\quad{\href{https://sanity-ecomm-demo.vercel.app/}{\color{blue}{https://sanity-ecomm-demo.vercel.app/}}}
+\end{tabular*}
+{An eCommerce website built with NextJS and Sanity CMS.}
+\begin{itemize}[itemsep=-2pt]
+  \vspace{-5pt}
+\item{Implemented checkout flow with Stripe.}
+\item{Implemented cart functionality, that gets synced to the browser localStorage.}
+\item{Used URL search parameters to keep track of states.}
+\item{Used NextJS HTML streaming to load the less important information after the pages are rendered on the server.}
+\end{itemize}
+\vspace{5pt}
+
+\begin{tabular*}{\textwidth}{p{0.5\linewidth}@{\extracolsep{\fill}}r}
+  \textbf{Applitrackr} & \textit{NextJS, React-Table, PostgreSQL, Prisma} \\
+  {Link:}\quad{\href{https://applirackr.vercel.app/}{\color{blue}{https://applitrackr.vercel.app/}}}
+\end{tabular*}
+{A web app that allow users to track their job applications progress.}
+\begin{itemize}[itemsep=-2pt]
+  \vspace{-5pt}
+\item{Implemented an editable table.}
+\item{Implemented OAuth authentication.}
+\end{itemize}
 
 %-----------Hobbies and Interests-----------------
 % \vspace{5pt}
